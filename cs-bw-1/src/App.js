@@ -524,9 +524,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <p>James Basile: Conway's Game of Life</p>
+        <p>Conway's Game of Life</p>
         <nav>
-          <a href='https://github.com/jbasile6/Conways-Life/blob/master/objectives/rules-game-life'>Game Rules</a>
+          <a href=''>Game Rules</a>
           <a href='#info'>Info Section</a>
         </nav>
 
