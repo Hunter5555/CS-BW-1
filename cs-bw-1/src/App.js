@@ -200,13 +200,13 @@ class App extends React.Component {
         }
       }
     }
-    // increse generation by 1
+    // increment gen
     this.setState({
       generation: this.state.generation + 1,
       currentGrid: nextGenGrid
     })
   }
-  //Game algo^^^-----------------------------------------------------------------------------------------------
+  //Game algorithmic funciton--------------------------------------------------------------------------------------------
 
 
   //start game-- has button on controlbar
@@ -519,21 +519,20 @@ class App extends React.Component {
     })
   }
 
-
-
   render() {
     return (
       <div className="App">
         <p>Conway's Game of Life</p>
         <nav>
-          <a href=''>Game Rules</a>
           <a href='#info'>Info Section</a>
         </nav>
 
         <AppWrapper>
           <GameWrapper>
+            <GameInfo>
             <p>Generation: {this.state.generation}</p>
             <p>Game Speed: {this.state.displaySpeed}</p>
+            </GameInfo>
             <Grid
               currentGrid={this.state.currentGrid}
               size={this.state.gridDimensions}
@@ -567,8 +566,6 @@ class App extends React.Component {
 }
 
 
-
-
 export default App;
 
 const AppWrapper = styled.div`
@@ -576,15 +573,19 @@ const AppWrapper = styled.div`
   flex-wrap: nowrap;
   border: 2px solid gray;
   padding: 10px 10px;
+  height: 90 vh;
+`
+const GameInfo = styled.div`
+  max-height: 10%;
 `
 
 const GameWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 48%; 
+  max-height: 50%;
   flex-wrap: wrap;
 `
-
 
 const ControlWrapper = styled.div`
   width: 48%;

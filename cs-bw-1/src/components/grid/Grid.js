@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components'
 import Cell from '../cell/Cell'
 
-
-
 export default function Grid(props) {
     return (
         <GridContainer>
@@ -28,9 +26,6 @@ export default function Grid(props) {
 const GridContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    // background-color: blue;
     margin: 20px auto;
-    width: 800px;
-    height: 800px
     border: 1px solid gray;
 `;

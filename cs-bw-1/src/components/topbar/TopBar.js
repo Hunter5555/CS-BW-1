@@ -12,7 +12,6 @@ export default function TopBar(props) {
             <button onClick={() => props.increaseSpeed()}>Increase Game Speed</button>
             <button onClick={() => props.decreaseSpeed()}>Decrease Game Speed</button>
 
-
         </>
     )
 }

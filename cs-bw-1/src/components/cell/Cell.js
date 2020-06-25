@@ -21,7 +21,6 @@ export default function Cell(props) {
     )
 }
 
-
 const CellContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
