@@ -22,7 +22,6 @@ export default function Grid(props) {
     )
 }
 
-
 const GridContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
