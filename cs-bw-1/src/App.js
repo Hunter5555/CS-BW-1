@@ -574,9 +574,12 @@ const AppWrapper = styled.div`
   border: 2px solid gray;
   padding: 10px 10px;
   height: 90 vh;
+  background-color: gray;
 `
 const GameInfo = styled.div`
   max-height: 10%;
+  font-size: 25;
+  font-weight: bold;
 `
 
 const GameWrapper = styled.div`

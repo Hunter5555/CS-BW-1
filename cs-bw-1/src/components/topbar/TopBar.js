@@ -1,17 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
 export default function TopBar(props) {
     return (
         <>
-            <button onClick={() => props.startGame()}>Start Game</button>
-            <button onClick={() => props.stopGame()}>Stop Game</button>
-            <button onClick={() => {
+            <Button onClick={() => props.startGame()}>Start Game</Button>
+            <Button onClick={() => props.stopGame()}>Stop Game</Button>
+            <Button onClick={() => {
                 props.stopGame();
                 props.nextGen();
-            }}>Next Generation</button>
-            <button onClick={() => props.increaseSpeed()}>Increase Game Speed</button>
-            <button onClick={() => props.decreaseSpeed()}>Decrease Game Speed</button>
+            }}>Next Generation</Button>
+            <Button onClick={() => props.increaseSpeed()}>Increase Game Speed</Button>
+            <Button onClick={() => props.decreaseSpeed()}>Decrease Game Speed</Button>
 
         </>
     )
 }
+
+const Button = styled.button`
+background-color: aquamarine;
+`

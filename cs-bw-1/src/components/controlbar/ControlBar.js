@@ -1,37 +1,42 @@
 import React from 'react';
+import styled from 'styled-components';
 
 export default function Grid(props) {
     return (
         <>
-            <button onClick={() => {
+            <Button onClick={() => {
                 props.stopGame();
                 props.gridReset(15);
-            }}>15x15</button>
-            <button onClick={() => {
+            }}>15x15</Button>
+            <Button onClick={() => {
                 props.stopGame();
                 props.gridReset(30);
-            }}>30x30</button>
-            <button onClick={() => {
+            }}>30x30</Button>
+            <Button onClick={() => {
                 props.stopGame();
                 props.gridReset(45);
             }
-            }>45x45</button>
-            <button onClick={() => {
+            }>45x45</Button>
+            <Button onClick={() => {
                 props.stopGame();
                 props.gridReset(60);
-            }}>60x60</button>
-            <button onClick={() => {
+            }}>60x60</Button>
+            <Button onClick={() => {
                 props.stopGame();
                 props.randomizeGrid();
-            }}>Randomize!</button>
-            <button onClick={() => {
+            }}>Randomize!</Button>
+            <Button onClick={() => {
                 props.stopGame();
                 props.clearGrid();
-            }}>Clear Grid!</button>
-            <button onClick={() => {
+            }}>Clear Grid!</Button>
+            <Button onClick={() => {
                 props.gridReset(15);
                 props.robotPreset();
-            }}>Preset Grid: Robot</button>
+            }}>Preset Grid: Robot</Button>
         </>
     )
 } 
+
+const Button = styled.button`
+background-color: aquamarine;
+`
