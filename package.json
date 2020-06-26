@@ -1,0 +1,11 @@
+{
+  "name": "CS-BW-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Hunter5555/CS-BW-1.git",
+  "author": "Hunter5555 <hunter.m.allan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "styled-components": "^5.1.1"
+  }
+}
