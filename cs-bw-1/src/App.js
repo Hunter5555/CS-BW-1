@@ -6,8 +6,6 @@ import ControlBar from '../src/components/controlbar/ControlBar'
 import styled from 'styled-components'
 import Info from './components/info/Info';
 
-
-
 class App extends React.Component {
   // on load, state should be a 15x15 grid with all cells set to dead
   state = {
